@@ -3,7 +3,7 @@ package com.zeta.payment.entity;
 import com.zeta.payment.entity.enums.UserRole;
 
 public class User {
-    private String userId;
+    private int userId;
     private String username;
     private String password;
     private UserRole role;
@@ -12,7 +12,14 @@ public class User {
 
     }
 
-    public User(String userId, String username, String password, UserRole role) {
+    //Constructor to initialize the values
+    public User(String username, String password, UserRole role) {
+        this.username = username;
+        this.password = password;
+        this.role = role;
+    }
+
+    public User(int userId, String username, String password, UserRole role) {
         this.userId = userId;
         this.username = username;
         this.password = password;
@@ -20,11 +27,13 @@ public class User {
     }
 
 
-    public String getUserId() {
+    public int getUserId() {
         return userId;
     }
 
-    public void setUserId(String userId) {
+
+    //getters and setters
+    public void setUserId(int userId) {
         this.userId = userId;
     }
 
@@ -61,4 +70,6 @@ public class User {
                 ", role=" + role +
                 '}';
     }
+
+
 }

@@ -11,10 +11,12 @@ public class Payment {
     private PaymentCategory paymentCategory;
     private PaymentStatus paymentStatus;
 
-    public Payment(){
+    public Payment() {}
 
-    }
-    public Payment(String transactionId, double amount, PaymentType paymentType, PaymentCategory paymentCategory, PaymentStatus paymentStatus) {
+
+    //Constructor to initialize the values
+    public Payment(String transactionId, double amount, PaymentType paymentType,
+                   PaymentCategory paymentCategory, PaymentStatus paymentStatus) {
         this.transactionId = transactionId;
         this.amount = amount;
         this.paymentType = paymentType;
@@ -22,7 +24,7 @@ public class Payment {
         this.paymentStatus = paymentStatus;
     }
 
-    // --- Getters & Setters ---
+    //Getters and Setters
     public String getTransactionId() { return transactionId; }
     public void setTransactionId(String transactionId) { this.transactionId = transactionId; }
 
