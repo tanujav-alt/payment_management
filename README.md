@@ -148,7 +148,7 @@ Ensures **traceability** and **accountability** across all roles.
 
 ## Set-Up Instructions :
 1. Clone the Repo
-git clone https://github.com/tanujav-alt/payment_management_system.git
+https://github.com/tanujav-alt/payment_management.git
 2. Open in IntelliJ IDEA :
 Go to File → Open and select the project folder.
 Ensure Java SDK and PostgreSQL JDBC driver are configured.
